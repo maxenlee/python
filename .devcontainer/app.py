@@ -9,8 +9,8 @@ from scipy.stats.mstats import winsorize
 import datetime
 
 # Fetch the value of the 'CONN' environment variable
-conn_value = os.getenv('CONN', 'Not Found')
-
+# conn_value = os.getenv('CONN', 'Not Found')
+conn_value = st.secrets["CONN"]
 # Database connection details
 DATABASE_URL = conn_value
 
